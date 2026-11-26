@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical">
+
+    <!-- شريط علوي -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/surface_red_dark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_arc" />
+
+        <TextView
+            android:id="@+id/tvDictTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="WIBR+ PRO RED"
+            android:textColor="@color/text_white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDictTargetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الشبكة"
+            android:textColor="@color/red_bright"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/red_primary" />
+
+    <!-- قائمة القواميس مع التحديد والحذف -->
+    <ListView
+        android:id="@+id/lvDictionaries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/red_border"
+        android:dividerHeight="1dp" />
+
+    <!-- الاختيارات الثلاثة بالأسفل: إضافة قاموس خارجي، زر السرعة (بدل الإعدادات)، وزر البدء الأخير -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_red_dark"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnAddExternalDict"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/card_red"
+            android:text="Add Custom Dictionary"
+            android:textColor="@color/red_bright"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- صف التحكم بالسرعة (الافتراضي 7 ثوانٍ) بالزيادة والنقصان -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_red_bar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <Button
+                android:id="@+id/btnSpeedDec"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+                android:backgroundTint="@color/red_primary"
+                android:text="-"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDictSpeedLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Speed: 7s per attempt"
+                android:textColor="@color/red_bright"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSpeedInc"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+                android:backgroundTint="@color/red_primary"
+                android:text="+"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- الزر الثالث الأخير لبدء التجربة -->
+        <Button
+            android:id="@+id/btnStartTest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/red_primary"
+            android:text="Start Test"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

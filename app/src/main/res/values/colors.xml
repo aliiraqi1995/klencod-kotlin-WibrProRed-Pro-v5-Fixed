@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#080304</color>
+    <color name="surface_red_dark">#180609</color>
+    <color name="card_red">#23080D</color>
+    <color name="red_primary">#FF1744</color>
+    <color name="red_bright">#FF4D5E</color>
+    <color name="red_soft">#FF8A80</color>
+    <color name="red_border">#7F1D1D</color>
+    <color name="text_white">#FFF5F5</color>
+    <color name="success_red_glow">#FF6E40</color>
+</resources>

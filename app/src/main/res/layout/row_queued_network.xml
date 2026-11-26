@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_dark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRowSsid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SSID"
+            android:textColor="@color/red_bright"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRowMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="القاموس: - | السرعة: 7 ثواني"
+            android:textColor="@color/red_soft"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDeleteQueued"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bg_red_bar"
+        android:contentDescription="حذف"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/red_bright" />
+
+</LinearLayout>

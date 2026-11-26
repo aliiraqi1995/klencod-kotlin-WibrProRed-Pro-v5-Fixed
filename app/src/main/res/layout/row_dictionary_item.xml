@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_dark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp">
+
+    <CheckBox
+        android:id="@+id/cbDictSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/red_primary" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDictName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dictionary Name"
+            android:textColor="@color/red_bright"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDictCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 passwords"
+            android:textColor="@color/red_soft"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDeleteDict"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bg_red_bar"
+        android:contentDescription="حذف القاموس"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/red_bright" />
+
+</LinearLayout>
